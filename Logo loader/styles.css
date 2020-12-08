@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    width: 60px;
+    user-select: none;
+}
+span {
+    width: 140px;
+    height: 4px;
+    background: #ccc;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+span::before {
+    content: '';
+    width: 65px;
+    height: 4px;
+    background: rgb(0,72,206);
+    position: absolute;
+    left: 100px;
+    animation: animate 1.5s ease infinite;
+}
+@keyframes animate {
+    50% {
+        left: -30px;
+    }
+}
