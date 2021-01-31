@@ -1,0 +1,59 @@
+.box{
+    position: relative;
+    left: 50%;
+    top: 40px;
+    margin-left: -18px;
+    }
+
+    .card1{
+        position: absolute;
+        width: 36px;
+        height: 20px;
+        background-color: #2A4494;
+        opacity: 0.2;
+        left: -60px;
+        border-radius:10px 0px 10px 0px;
+        animation: card1 1120ms infinite;
+        animation-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.33,0,0.67,1);
+    }
+    @keyframes card1{
+        0%{  }
+        28.5%{ transform: scale(1.2); opacity: 1; }
+        57%{ transform: scale(1); opacity: 0.2; }
+    }
+
+    .card2{
+        position: absolute;
+        width: 36px;
+        height: 20px;
+        background-color: #4EA5D9;
+        opacity: 0.2;
+        border-radius:10px 0px 10px 0px;
+        animation: card2 1120ms infinite;
+        animation-delay: 214ms;
+        transition-timing-function: cubic-bezier(0.33,0,0.67,1);
+    }
+    @keyframes card2{
+        0%{  }
+        28.5%{ transform: scale(1.2); opacity: 1; }
+        57%{ transform: scale(1); opacity: 0.2; }
+    }
+
+    .card3{
+        position: absolute;
+        width: 36px;
+        height: 20px;
+        background-color: #44CFCB;
+        opacity: 0.2;
+        left: 60px;
+        border-radius:10px 0px 10px 0px;
+        animation: card2 1120ms infinite;
+        animation-delay: 428ms;
+        transition-timing-function: cubic-bezier(0.33,0,0.67,1);
+    }
+    @keyframes card3{
+        0%{  }
+        28.5%{ transform: scale(1.2); opacity: 1; }
+        57%{ transform: scale(1); opacity: 0.2; }
+    }
